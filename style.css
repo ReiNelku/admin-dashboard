@@ -18,13 +18,13 @@ body {
 }
 
 header {
-  grid-area: "header";
+  grid-area: header;
 }
 
 aside {
-  grid-area: "sidebar";
+  grid-area: sidebar;
 }
 
 main {
-  grid-area: "main";
+  grid-area: main;
 }
