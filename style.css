@@ -17,10 +17,6 @@ body {
     "sidebar main";
 }
 
-header {
-  grid-area: header;
-}
-
 aside {
   padding: 0.8rem;
   grid-area: sidebar;
@@ -31,6 +27,14 @@ aside {
 .navigation,
 .settings {
   list-style-type: none;
+}
+
+header {
+  padding: 0.8rem;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 main {
