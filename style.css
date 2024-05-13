@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+
+header {
+  grid-area: "header";
+}
+
+aside {
+  grid-area: "sidebar";
+}
+
+main {
+  grid-area: "main";
+}
