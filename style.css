@@ -38,5 +38,26 @@ header {
 }
 
 main {
+  padding: 0.8rem;
   grid-area: main;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.projects {
+  grid-column: 1 / 2;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.announcements {
+  grid-column: 2 / 3;
+}
+
+.trending {
+  grid-column: 2 / 3;
 }
