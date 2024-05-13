@@ -22,7 +22,15 @@ header {
 }
 
 aside {
+  padding: 0.8rem;
   grid-area: sidebar;
+  display: grid;
+  gap: 1.6rem;
+}
+
+.navigation,
+.settings {
+  list-style-type: none;
 }
 
 main {
