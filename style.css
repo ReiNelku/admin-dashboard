@@ -44,12 +44,34 @@ aside {
 
 aside > h1 {
   font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+aside > h1 > .icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+aside .icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  filter: invert(100%) sepia(0%) saturate(3718%) hue-rotate(97deg)
+    brightness(111%) contrast(103%);
 }
 
 .navigation,
 .settings {
   list-style-type: none;
   display: grid;
+  gap: 1rem;
+}
+
+.navigation li,
+.settings li {
+  display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
