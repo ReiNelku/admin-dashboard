@@ -1,3 +1,15 @@
+:root {
+  --main-background: #f8f5f2;
+  --header-background: #fffffe;
+  --sidebar-background: #3da9fc;
+  --sidebar-color: #fffffe;
+  --headline-color: #094067;
+  --paragraph-color: #5f6c7b;
+  --button-background: #3da9fc;
+  --button-color: #fffffe;
+  --card-stripe: #ef4565;
+}
+
 * {
   padding: 0;
   margin: 0;
