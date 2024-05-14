@@ -88,6 +88,17 @@ header {
   gap: 1rem;
 }
 
+.search {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search .icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
 .search > input {
   background-color: #eee;
   border: 0;
@@ -99,6 +110,14 @@ header {
 .user-info {
   font-size: 1.2rem;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.user-info .icon {
+  height: 1.2rem;
+  width: 1.2rem;
 }
 
 .introduction > p {
