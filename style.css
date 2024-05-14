@@ -102,10 +102,16 @@ header {
 }
 
 main {
-  padding: 0.8rem;
+  background-color: var(--main-background);
+  padding: 2rem 1.5rem;
   grid-area: main;
   display: grid;
   grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+}
+
+main > div > h2 {
+  padding-bottom: 1rem;
 }
 
 .projects {
@@ -114,14 +120,62 @@ main {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
+}
+
+.card {
+  background-color: var(--header-background);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-left: 5px solid var(--card-stripe);
+  box-shadow: 0 3px 5px #ccc;
+  padding: 2rem;
+}
+
+.projects + div {
+  display: grid;
+  gap: 2rem;
+}
+
+.projects + div h2 {
+  margin-bottom: 1rem;
 }
 
 .announcements {
   grid-column: 2 / 3;
 }
 
+.announcements > div,
+.trending > div {
+  background-color: var(--header-background);
+  padding: 1rem 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px #ccc;
+}
+
+.announcement {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+}
+
+.announcements > div .announcement:last-child {
+  border: 0;
+}
+
 .trending {
   grid-column: 2 / 3;
+}
+
+.trending > div {
+  padding: 1rem;
+}
+
+.trending-project {
+  padding: 1rem;
+}
+
+.trending-project > h3 {
+  padding-bottom: 0.5rem;
 }
