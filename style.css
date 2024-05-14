@@ -21,6 +21,16 @@ html {
   font-family: Roboto, system-ui, sans-serif;
 }
 
+h1,
+h2,
+h3 {
+  color: var(--headline-color);
+}
+
+p {
+  color: var(--paragraph-color);
+}
+
 body {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -43,6 +53,7 @@ aside {
 }
 
 aside > h1 {
+  color: var(--sidebar-color);
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -115,6 +126,10 @@ header {
   gap: 2rem;
 }
 
+.user-info p {
+  color: var(--headline-color);
+}
+
 .user-info .icon {
   height: 1.2rem;
   width: 1.2rem;
@@ -131,7 +146,8 @@ header {
   width: 4rem;
 }
 
-.introduction  p {
+.introduction p {
+  color: var(--headline-color);
   font-weight: 500;
 }
 
