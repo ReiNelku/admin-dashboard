@@ -120,11 +120,22 @@ header {
   width: 1.2rem;
 }
 
-.introduction > p {
+.introduction {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.introduction .avatar {
+  height: 4rem;
+  width: 4rem;
+}
+
+.introduction  p {
   font-weight: 500;
 }
 
-.introduction > h2 {
+.introduction h2 {
   padding-top: 0.5rem;
 }
 
@@ -230,8 +241,22 @@ main > div > h2 {
 
 .trending-project {
   padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.trending-project > h3 {
+.trending-project h3 {
   padding-bottom: 0.5rem;
+}
+
+.trending-project:last-child .avatar {
+  background-color: pink;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
 }
